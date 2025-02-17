@@ -1,6 +1,5 @@
 import cv2
 import os
-import numpy as np
 
 def int_to_bits(num, bit_length):
     """Convert an integer to a fixed-length list of bits."""
@@ -15,15 +14,23 @@ def str_to_bits(s):
 
 def embed_data(image, data_bits):
     """Embed data into the image using LSB steganography."""
-    flat = image.flatten()
+    height, width, channels = image.shape
+    total_pixels = height * width * channels
 
-    if len(data_bits) > len(flat):
+    if len(data_bits) > total_pixels:
         raise ValueError("Data too large to embed in this image!")
 
-    for i in range(len(data_bits)):
-        flat[i] = (int(flat[i]) & 254) | data_bits[i]  # Ensure uint8 stays within bounds
+    bit_index = 0
+    for row in range(height):
+        for col in range(width):
+            for channel in range(channels):
+                if bit_index < len(data_bits):
+                    image[row][col][channel] = (image[row][col][channel] & 254) | data_bits[bit_index]
+                    bit_index += 1
+                else:
+                    return image  # Stop when all bits are embedded
 
-    return flat.reshape(image.shape).astype(np.uint8)  # Ensure correct datatype
+    return image
 
 def encrypt():
     """Encrypts a secret message into an image."""
@@ -74,4 +81,5 @@ def encrypt():
 
 if __name__ == "__main__":
     encrypt()
+
 
