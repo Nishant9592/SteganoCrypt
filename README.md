@@ -13,3 +13,13 @@ SteganoCrypt is a simple yet powerful steganography tool that lets you securely 
 🎯 Usage: Encrypt and decrypt messages separately for enhanced security. Perfect for confidential communication, watermarking, or digital signatures.
 
 🚀 Get Started Now! Encrypt your secrets, share your image, and reveal them only with the right key!
+
+
+Requirements
+Python 3.x
+OpenCV
+
+Installation
+1.Clone the repository.
+2.Install the required libraries:
+pip install opencv-python numpy
