@@ -15,9 +15,9 @@ SteganoCrypt is a simple yet powerful steganography tool that lets you securely 
 🚀 Get Started Now! Encrypt your secrets, share your image, and reveal them only with the right key!
 
 
-Requirements
-Python 3.x
-OpenCV
+#Requirements
+1.Python 3.x
+2.OpenCV
 
 Installation
 1.Clone the repository.
