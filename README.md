@@ -1,25 +1,49 @@
-# SteganoCrypt
+🖼️ SteganoCrypt - Image Steganography Tool
 
-🕵️‍♂️ SteganoCrypt – Hide & Reveal Secrets in Images
+SteganoCrypt allows you to securely hide secret messages inside images using Least Significant Bit (LSB) encoding. It ensures safe message embedding and retrieval using a passcode.
+🚀 Features
 
-SteganoCrypt is a simple yet powerful steganography tool that lets you securely hide and extract secret messages within images using Least Significant Bit (LSB) encoding.
+✅ Encrypt Messages – Hide text inside an image using LSB.
+✅ Decrypt Messages – Extract hidden messages with a passcode.
+✅ Passcode Protection – Ensures only authorized access.
+✅ Simple & Fast – Uses OpenCV and standard Python libraries.
+✅ No External Dependencies – Works without NumPy.
+📦 Installation
 
-🔐 Features:
-✅ Encrypt (Hide Data): Embed a secret message into an image using a passcode.
-🔓 Decrypt (Reveal Data): Extract hidden messages from an encrypted image with the correct passcode.
-🖼️ Lossless Encryption: Uses PNG format to preserve hidden data without compression loss.
-⚡ Lightweight & Fast: No extra dependencies—just OpenCV!
+Ensure you have Python 3 installed, then install OpenCV:
 
-🎯 Usage: Encrypt and decrypt messages separately for enhanced security. Perfect for confidential communication, watermarking, or digital signatures.
+pip install opencv-python
 
-🚀 Get Started Now! Encrypt your secrets, share your image, and reveal them only with the right key!
+⚡ Usage
+🔒 Encrypt a Message into an Image
 
+python encrypt.py
 
-#Requirements
-1.Python 3.x
-2.OpenCV
+    Enter the image path (supports .png, .jpg, .jpeg).
+    Enter the output file name (must be .png).
+    Provide the secret message to hide.
+    Set a passcode for protection.
+    The encrypted image is saved!
 
-Installation
-1.Clone the repository.
-2.Install the required libraries:
-pip install opencv-python numpy
+🔑 Decrypt a Hidden Message
+
+python decrypt.py
+
+    Enter the path of the encrypted image.
+    Enter the correct passcode.
+    The secret message is revealed!
+
+🔧 Requirements
+
+    Python 3.x
+    OpenCV (opencv-python)
+
+⚠️ Notes & Warnings
+
+    The output image must be saved in PNG format to preserve the hidden data.
+    If the passcode is incorrect, the message cannot be retrieved.
+    Large messages may not fit in small images—use a high-resolution image.
+
+📜 License
+
+This project is open-source and free to use!
