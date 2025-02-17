@@ -12,38 +12,38 @@ SteganoCrypt allows you to securely hide secret messages inside images using Lea
 
 Ensure you have Python 3 installed, then install OpenCV:
 
-pip install opencv-python
+     pip install opencv-python
 
 # ⚡ Usage
 ### 🔒 Encrypt a Message into an Image
 
 python encryption.py
 
-    Enter the image path (supports .png, .jpg, .jpeg).
-    Enter the output file name (must be .png).
-    Provide the secret message to hide.
-    Set a passcode for protection.
-    The encrypted image is saved!
+-Enter the image path (supports .png, .jpg, .jpeg).
+-Enter the output file name (must be .png).
+-Provide the secret message to hide.
+-Set a passcode for protection.
+-The encrypted image is saved!
 
 ### 🔑 Decrypt a Hidden Message
 
 python decryption.py
 
-    Enter the path of the encrypted image.
-    Enter the correct passcode.
-    The secret message is revealed!
+-Enter the path of the encrypted image.
+-Enter the correct passcode.
+-The secret message is revealed!
 
 # 🔧 Requirements
 
-    Python 3.x
-    OpenCV (opencv-python)
+- Python 3.x
+-OpenCV (opencv-python)
 
 ## ⚠️ Notes & Warnings
 
-    The output image must be saved in PNG format to preserve the hidden data.
-    If the passcode is incorrect, the message cannot be retrieved.
-    Large messages may not fit in small images—use a high-resolution image.
+    -The output image must be saved in PNG format to preserve the hidden data.
+    -If the passcode is incorrect, the message cannot be retrieved.
+    -Large messages may not fit in small images—use a high-resolution image.
 
 ## 📜 License
 
-This project is open-source and free to use!
+-This project is open-source and free to use!
