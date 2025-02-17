@@ -1,4 +1,4 @@
-🖼️ SteganoCrypt - Image Steganography Tool
+# 🖼️ SteganoCrypt - Image Steganography Tool
 
 SteganoCrypt allows you to securely hide secret messages inside images using Least Significant Bit (LSB) encoding. It ensures safe message embedding and retrieval using a passcode.
 # 🚀 Features
@@ -17,7 +17,7 @@ Ensure you have Python 3 installed, then install OpenCV:
 # ⚡ Usage
 ### 🔒 Encrypt a Message into an Image
 
-python encryption.py
+      python encryption.py
 
 -Enter the image path (supports .png, .jpg, .jpeg).
 -Enter the output file name (must be .png).
@@ -27,7 +27,7 @@ python encryption.py
 
 ### 🔑 Decrypt a Hidden Message
 
-python decryption.py
+      python decryption.py
 
 -Enter the path of the encrypted image.
 -Enter the correct passcode.
@@ -39,10 +39,10 @@ python decryption.py
 -OpenCV (opencv-python)
 
 ## ⚠️ Notes & Warnings
-
-    -The output image must be saved in PNG format to preserve the hidden data.
-    -If the passcode is incorrect, the message cannot be retrieved.
-    -Large messages may not fit in small images—use a high-resolution image.
+-If You use linux or macos use python3 encryption.py/decryption.py.
+-The output image must be saved in PNG format to preserve the hidden data.
+-If the passcode is incorrect, the message cannot be retrieved.
+-Large messages may not fit in small images—use a high-resolution image.
 
 ## 📜 License
 
