@@ -10,10 +10,12 @@ SteganoCrypt allows you to securely hide secret messages inside images using Lea
 - No External Dependencies – Works without NumPy.
 # 📦 Installation
 
-Ensure you have Python 3 installed, then install OpenCV:
+Ensure you have Python 3 and git installed, then install OpenCV:
 
      pip install opencv-python
-
+     
+Clone the repository:
+     git clone https://github.com/Nishant9592/SteganoCrypt.git
 # ⚡ Usage
 ### 🔒 Encrypt a Message into an Image
 
@@ -36,7 +38,7 @@ Ensure you have Python 3 installed, then install OpenCV:
 # 🔧 Requirements
 
 - Python 3.x
--OpenCV (opencv-python)
+- OpenCV (opencv-python)
 
 ## ⚠️ Notes & Warnings
 - If You use linux or macos use python3 encryption.py/decryption.py.
