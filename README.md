@@ -20,7 +20,7 @@ Clone the repository:
 # ⚡ Usage
 ### 🔒 Encrypt a Message into an Image
 
-      python encryption.py
+      python3 encryption.py
 
 - Enter the image path (supports .png, .jpg, .jpeg).
 - Enter the output file name (must be .png).
@@ -30,7 +30,7 @@ Clone the repository:
 
 ### 🔑 Decrypt a Hidden Message
 
-      python decryption.py
+      python3 decryption.py
 
 - Enter the path of the encrypted image.
 - Enter the correct passcode.
